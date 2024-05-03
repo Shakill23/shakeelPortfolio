@@ -1,0 +1,31 @@
+*,
+*::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@property --top-left {
+    syntax: "<percentange>";
+    inherits: false;
+    initial-value: 50%;
+}
+
+@property --top-right {
+    syntax: "<percentange>";
+    inherits: false;
+    initial-value: 50%;
+}
+
+@property --bottom-left {
+    syntax: "<percentange>";
+    inherits: false;
+    initial-value: 0%;
+}
+
+@property --bottom-right {
+    syntax: "<percentange>";
+    inherits: false;
+    initial-value: 0%;
+}
