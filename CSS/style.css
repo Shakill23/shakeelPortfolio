@@ -29,3 +29,40 @@
     inherits: false;
     initial-value: 0%;
 }
+
+:is(.navbar, footer){
+    background-color: grey;
+}
+
+:is(.nav-link){
+    color: black;
+}
+
+img[alt="logo"] {
+    width: 5rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* grid layout */
+:is(body){
+    display: grid;
+    text-align: center;
+}
+
+/* create 3 rows */
+:is(body){
+    grid-template-rows: auto 
+    minmax(100%, 100dvh) auto;
+}
+
+/* Navbar */
+a{
+    transition: all .5s;
+
+    &:hover{
+        transform: scale(1.2);
+        text-decoration: underline;
+    }
+}
