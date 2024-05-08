@@ -38,18 +38,30 @@
     color: black;
 }
 
-main{
+#about, #resume, #skills, #projects, #testimonials, #contact, .underlay{
+    z-index: 3;
     position: relative;
 }
 
 #profilePic {
     width: 20rem;
     position: static;
-    display: inline; /* Reset display property */
-    top: auto; /* Reset top property */
-    left: auto; /* Reset left property */
-    right: auto; /* Reset right property */
-    bottom: auto; /* Reset bottom property */
+    padding: 1rem;
+}
+
+#about h2,
+#about p{
+    font-size: 2rem;
+    background-color: aliceblue;
+}
+
+.block{
+    background-color: aliceblue;
+    margin: .25rem;
+}
+
+#zeroMargin{
+    margin: 0rem;
 }
 
 img[alt="logo"] {
@@ -67,8 +79,7 @@ img[alt="logo"] {
 
 /* create 3 rows */
 :is(body){
-    grid-template-rows: auto 
-    minmax(100%, 100dvh) auto;
+    grid-template-rows: auto minmax(80vh, auto) auto;
 }
 
 /* Navbar */
@@ -80,14 +91,51 @@ a{
         text-decoration: underline;
     }
 }
+/* flip card */
+.card-container {
+    perspective: 1000px;
+  }
 
+  .card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+
+  .card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .front {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .back {
+    background-color: #28a745;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
 /* animated background */
 .wrapper{
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 35%, rgb(255, 21, 251) );
+    background: linear-gradient(90deg, rgb(16, 2, 2) 0%, rgb(90, 8, 8) 35%, rgb(255, 0, 0) );
 }
 
 .box div{
@@ -96,6 +144,7 @@ a{
     height: 30px;
     background-color: transparent;
     border: 6px solid rgb(255, 255, 255);
+    z-index: 1;
 }
 
 .box div:nth-child(1){
