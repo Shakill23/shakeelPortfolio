@@ -65,14 +65,14 @@
 
         <main class="container-fluid">
             <section id="home" class="container">
-                <div class="row justify-content-center">
+                <div data-aos="fade-down" data-aos-duration="1500" class="row justify-content-center">
                     <div class="col-lg-8 col-md-10 col-sm-12">
-                        <img id="profilePic" class="img-fluid"
+                        <img id="profilePic" class="img-fluid zoom-in-hover"
                             src="https://shakill23.github.io/allImages/images/sdFormal.jpg" alt="profilePic"
                             loading="lazy">
                     </div>
                     <div class="underlay col-lg-8 col-md-10 col-sm-12 col-12 align-self-center">
-                        <h2>Shakeel Davids</h2>
+                        <h2 class="cool-text" data-text="Shakeel Davids">Shakeel Davids</h2>
                         <h2>An Aspiring Web Developer</h2>
                     </div>
                 </div>
@@ -81,14 +81,21 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-md-10 col-sm-12 col-12">
                         <h2>About</h2>
-                        <p>Hey there! I'm Shakeel Davids, a budding web developer passionate about crafting
-                            user-friendly
-                            websites and web applications. From HTML and CSS to JavaScript and beyond, I love diving
-                            into
-                            the languages of the web to bring digital experiences to life. I thrive on the challenge of
-                            problem-solving and the endless creativity that web development offers. Let's build
-                            something
-                            amazing together!</p>
+                        <div data-aos="fade-up">
+                            <div class="zoom-in-hover">
+                                <p>Hey there! I'm Shakeel Davids, a budding web developer passionate about crafting
+                                    user-friendly
+                                    websites and web applications. From HTML and CSS to JavaScript and beyond, I love
+                                    diving
+                                    into
+                                    the languages of the web to bring digital experiences to life. I thrive on the
+                                    challenge
+                                    of
+                                    problem-solving and the endless creativity that web development offers. Let's build
+                                    something
+                                    amazing together!</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -98,24 +105,27 @@
                         <h2>Resume</h2>
                         <h3>Education</h3>
                         <div class="row justify-content-center">
-                            <div class="block col-lg-4 col-md-6">
-                                <p>2020-2022:</p>
+                            <div data-aos="fade-right" class="block col-lg-4 col-md-6">
+                                <p><img src="https://shakill23.github.io/allImages/images/graduation-hat.png"
+                                        alt="icon">2020-2022:</p>
                                 <h4>Norman Henshilwood High School</h4>
                                 <p>I went to Norman Henshilwood High School and studied Computer Applications and
                                     Technology, Physical Science, Pure Mathematics and Business Studies. I then
                                     matriculated
                                     in 2022.</p>
                             </div>
-                            <div class="block col-lg-4 col-md-6">
-                                <p>2023-2023:</p>
+                            <div data-aos="fade-left" class="block col-lg-4 col-md-6">
+                                <p><img src="https://shakill23.github.io/allImages/images/graduation-hat.png"
+                                        alt="icon">2023-2023:</p>
                                 <h4>HyperionDev</h4>
                                 <p>I did a 6 month online course at HyperionDev where I learned HTML, CSS, Javascript
                                     and Bootstrap.</p>
                             </div>
                         </div>
-                        <div class="row justify-content-center">
-                            <div class="block col-lg-8 col-md-10 col-sm-12 col-12">
-                                <p>2024-Present:</p>
+                        <div class="row justify-content-center zoom-in-hover">
+                            <div data-aos="fade-up" class="block col-lg-8 col-md-10 col-sm-12 col-12">
+                                <p><img src="https://shakill23.github.io/allImages/images/graduation-hat.png"
+                                        alt="icon">2024-Present:</p>
                                 <h4>Life Choices Coding Academy</h4>
                                 <p>A Bootcamp program that provides you with the core fundamentals of Web Development,
                                     learning coding languages such as HTML, CSS, JavaScript, and more coding techniques.
@@ -126,14 +136,20 @@
                         </div>
                         <h3>Work & Experience</h3>
                         <div class="row justify-content-center">
-                            <div class="block col-lg-8 col-md-10 col-sm-12 col-12">
-                                <p>2020-2024</p>
-                                <h4>Adminstration</h4>
-                                <p>I did admin work part-time for a company and the tasks I had to was: scanning
-                                    documents
-                                    like passports and IDs, booking train and airline tickets, editing and working with
-                                    Excel
-                                    spreadsheets.</p>
+                            <div class="block col-lg-8 col-md-10 col-sm-12 col-12 zoom-in-hover">
+                                <div data-aos="zoom-out-right">
+                                    <p><img src="https://shakill23.github.io/allImages/images/administration.png"
+                                            alt="icon">2020-2024</p>
+                                    <h4>Adminstration</h4>
+                                </div>
+                                <div data-aos="zoom-out-left">
+                                    <p>I did admin work part-time for a company and the tasks I had to was: scanning
+                                        documents
+                                        like passports and IDs, booking train and airline tickets, editing and working
+                                        with
+                                        Excel
+                                        spreadsheets.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -145,71 +161,103 @@
                         <h2>Skills</h2>
                         <div class="container mt-5">
                             <div class="row justify-content-center">
-                                <div class="card-container col-lg-3 col-md-4 col-sm-6 col-6">
-                                    <div class="card">
-                                        <div class="card-face front">
+                                <div class="card-container col-lg-3 col-md-4 col-sm-6 col-6 skills">
+                                    <div class="card skills">
+                                        <div class="card-face front skills">
                                             <h3><img src="https://shakill23.github.io/allImages/images/html-5.png"
                                                     alt="html" loading="lazy"></h3>
                                         </div>
-                                        <div class="card-face back">
-                                            <h3>HTML</h3>
+                                        <div class="card-face back skills">
+
                                             <ul>
-                                                <li>Semantic Markup</li>
-                                                <li>Forms</li>
-                                                <li>Media</li>
-                                                <li>Canvas</li>
+                                                <li class="move-on-hover"><img
+                                                        src="https://shakill23.github.io/allImages/images/semantic-web.png"
+                                                        alt="icon">Semantic Markup</li>
+                                                <li class="move-on-hover"><img
+                                                        src="https://shakill23.github.io/allImages/images/form.png"
+                                                        alt="icon">Forms</li>
+                                                <li class="move-on-hover"><img
+                                                        src="https://shakill23.github.io/allImages/images/website.png"
+                                                        alt="icon">Media</li>
+                                                <li class="move-on-hover"><img
+                                                        src="https://shakill23.github.io/allImages/images/canvas.png"
+                                                        alt="icon">Canvas</li>
                                             </ul>
 
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-container col-lg-3 col-md-4 col-sm-6 col-6">
-                                    <div class="card">
-                                        <div class="card-face front">
+                                <div class="card-container col-lg-3 col-md-4 col-sm-6 col-6 skills">
+                                    <div class="card skills">
+                                        <div class="card-face front skills">
                                             <h3><img src="https://shakill23.github.io/allImages/images/css-3.png"
                                                     alt="css" loading="lazy"></h3>
                                         </div>
-                                        <div class="card-face back">
-                                            <h3>CSS</h3>
+                                        <div class="card-face back skills">
+
                                             <ul>
-                                                <li>Flexbox</li>
-                                                <li>Animations</li>
-                                                <li>Transitions</li>
-                                                <li>Responsive Design</li>
+                                                <li class="move-on-hover2"><img
+                                                        src="https://shakill23.github.io/allImages/images/menu.png"
+                                                        alt="icon">Flexbox</li>
+                                                <li class="move-on-hover2"><img
+                                                        src="https://shakill23.github.io/allImages/images/animation.png"
+                                                        alt="icon">Animations</li>
+                                                <li class="move-on-hover2"><img
+                                                        src="https://shakill23.github.io/allImages/images/transition.png"
+                                                        alt="icon">Transitions</li>
+                                                <li class="move-on-hover2"><img
+                                                        src="https://shakill23.github.io/allImages/images/responsive.png"
+                                                        alt="icon">Responsive Design</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-container col-lg-3 col-md-4 col-sm-6 col-6">
-                                    <div class="card">
-                                        <div class="card-face front">
+                                <div class="card-container col-lg-3 col-md-4 col-sm-6 col-6 skills">
+                                    <div class="card skills">
+                                        <div class="card-face front skills">
                                             <h3><img src="https://shakill23.github.io/allImages/images/js.png"
                                                     alt="JavaScript" loading="lazy"></h3>
                                         </div>
-                                        <div class="card-face back">
-                                            <h3>JavaScript</h3>
+                                        <div class="card-face back skills">
+
                                             <ul>
-                                                <li>DOM Manipulation</li>
-                                                <li>Events</li>
-                                                <li>Async/Await</li>
-                                                <li>ES6+</li>
+                                                <li class="move-on-hover3"><img
+                                                        src="https://shakill23.github.io/allImages/images/javascript.png"
+                                                        alt="icon">DOM Manipulation</li>
+                                                <li class="move-on-hover3"><img
+                                                        src="https://shakill23.github.io/allImages/images/event.png"
+                                                        alt="icon">Events</li>
+                                                <li class="move-on-hover3"><img
+                                                        src="https://shakill23.github.io/allImages/images/time.png"
+                                                        alt="icon">Async/Await</li>
+                                                <li class="move-on-hover3"><img
+                                                        src="https://shakill23.github.io/allImages/images/javascript.png"
+                                                        alt="icon">ES6+</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-container col-lg-3 col-md-4 col-sm-6 col-6">
-                                    <div class="card">
-                                        <div class="card-face front">
+                                <div class="card-container col-lg-3 col-md-4 col-sm-6 col-6 skills">
+                                    <div class="card skills">
+                                        <div class="card-face front skills">
                                             <h3><img src="https://shakill23.github.io/allImages/images/bootstrap.png"
                                                     alt="bootstrap" loading="lazy"></h3>
                                         </div>
-                                        <div class="card-face back">
-                                            <h3>Bootstrap</h3>
+                                        <div class="card-face back skills">
+
                                             <ul>
-                                                <li>Responsive Design</li>
-                                                <li>Grid System</li>
-                                                <li>Components</li>
-                                                <li>Utilities</li>
+                                                <li class="move-on-hover4"><img
+                                                        src="https://shakill23.github.io/allImages/images/responsive.png"
+                                                        alt="icon">Responsive Design</li>
+                                                <li class="move-on-hover4"><img
+                                                        src="https://shakill23.github.io/allImages/images/grid-organization.png"
+                                                        alt="icon">Grid System</li>
+                                                <li class="move-on-hover4"><img
+                                                        src="https://shakill23.github.io/allImages/images/database.png"
+                                                        alt="icon">Components</li>
+                                                <li class="move-on-hover4"><img
+                                                        src="https://shakill23.github.io/allImages/images/settings.png"
+                                                        alt="icon">Utilities</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -221,7 +269,87 @@
             </section>
             <section id="testimonials" class="container">
                 <div class="row">
-                    <h2>Testimonials</h2>
+
+                    <section id="testimonials" class="container">
+                        <div class="row">
+                            <h2>Testimonials</h2>
+                            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="https://shakill23.github.io/allImages/images/njFormal.jpg"
+                                                class="profile-pic" alt="Testimonial 1">
+                                            <div class="quote">
+                                                <p>"In the realm of coding, Shakeel reigns supreme. He's not
+                                                    just a brilliant coder; he's a mentor in the making."</p>
+                                                <p class="testimonial-author">Nizaam Jeftha</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="https://shakill23.github.io/allImages/images/akFormal.jpg"
+                                                class="profile-pic" alt="Testimonial 2">
+                                            <div class="quote">
+                                                <p>"His patience and guidance have been instrumental in my growth as a
+                                                    developer."</p>
+                                                <p class="testimonial-author">Anushqa Kandan</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="https://shakill23.github.io/allImages/images/joel2.jpg"
+                                                class="profile-pic" alt="Testimonial 2">
+                                            <div class="quote">
+                                                <p>"Shakeel is a highly creative, well-behaved, and dedicated individual
+                                                    who thrives on collaborating with his peers and excels at working on
+                                                    project assignments. He has acquired various skills and tools,
+                                                    including HTML5, CSS3, Bootstrap, VS Code, and wireframe. I am
+                                                    pleased to introduce him as an exceptional candidate and developer."
+                                                </p>
+                                                <p class="testimonial-author">Joel Mukanya</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="https://shakill23.github.io/allImages/images/akFormal.jpg"
+                                                class="profile-pic" alt="Testimonial 2">
+                                            <div class="quote">
+                                                <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                                    accusantium doloremque laudantium."</p>
+                                                <p class="testimonial-author">Anushqa Kandan</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="https://shakill23.github.io/allImages/images/akFormal.jpg"
+                                                class="profile-pic" alt="Testimonial 2">
+                                            <div class="quote">
+                                                <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                                    accusantium doloremque laudantium."</p>
+                                                <p class="testimonial-author">Anushqa Kandan</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
 
                 </div>
             </section>
@@ -247,6 +375,11 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
