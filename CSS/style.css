@@ -10,6 +10,8 @@ html {
     scroll-behavior: smooth;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 @property --top-left {
@@ -44,11 +46,48 @@ html {
     color: black;
 }
 
+#shakeel{
+    margin-top: 1rem;
+}
+
 #about, #resume, #skills, #projects, #testimonials, #contact, .underlay{
     z-index: 3;
     position: relative;
 }
 
+h2, h3:not(#shakeel, #education) {
+    margin: 4rem 1rem 1rem 1rem;
+}
+
+h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2.1rem;
+    color: #333; 
+    text-shadow: .25px .25px 2px rgba(255, 255, 255, 0.704); 
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.aspiring{
+    color: #333; 
+    text-shadow: .25px .25px 2px rgba(255, 255, 255, 0.704); 
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h2:not(#shakeel) {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3.18rem;
+    color: #333; 
+    text-shadow: .25px .25px 2px rgba(255, 255, 255, 0.704); 
+    font-weight: bold;
+    letter-spacing: 1px; 
+}
+
+
+#education{
+    margin: 1rem;
+}
 
 #profilePic {
     width: 100%;
@@ -67,6 +106,7 @@ html {
 
 
 #about p{
+    font-family: 'Work Sans', sans-serif;
     font-size: 2rem;
     background-color: white;
     border-radius: 1rem;
@@ -74,6 +114,7 @@ html {
 }
 
 .block{
+    font-family: 'Work Sans', sans-serif;
     background-color: white;
     margin: .25rem;
     border-radius: 1rem;
@@ -121,6 +162,7 @@ a{
 
 .card {
     height: 100%;
+    background: #c9c9c9;;
 }
 
 .card-img-top {
@@ -131,11 +173,13 @@ a{
 }
 
 .card-title {
+    font-family: 'Work Sans', sans-serif;
     font-weight: bold;
     font-size: 18px;
 }
 
 .card-text {
+    font-family: 'Work Sans', sans-serif;
     font-size: 14px;
 }
 
@@ -148,11 +192,53 @@ a{
     background-color: #0056b3;
     border-color: #0056b3;
 }
+
+/* contact */
+#contact {
+    border-radius: 1rem;
+    background-color: rgb(146, 146, 146);
+    padding: 20px;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 576px) {
+    #contact {
+        margin: 20px 0;
+        width: auto;
+    }
+}
+
+
+#contact h2 {
+    text-align: center;
+}
+
+#contact .form-group {
+    margin-bottom: 1rem;
+}
+
+#contact form label {
+    font-weight: bold;
+}
+
+#contact form button {
+    width: 100%;
+}
+
+
 /* flip card */
 
+#liHead {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #999898;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    margin-top: 2px;
+    padding: 10px; 
+}
+
 .card-container.skills img {
-    width: 10rem;
-    height: 10rem;
+    width: 6rem; 
+    height: 6rem; 
 }
 
 .card-container.skills {
@@ -163,7 +249,7 @@ a{
     position: relative;
     width: 100%;
     max-width: 200px; 
-    height: 200px;
+    height: 200px; 
     transform-style: preserve-3d;
     transition: transform 0.5s;
 }
@@ -180,20 +266,17 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 1rem;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .card.skills .front {
     background-color: #ffffff;
     color: black;
-    border-radius: 1rem;
 }
 
 .card.skills .back {
     background-color: #ffffff;
     transform: rotateY(180deg);
-    border-radius: 1rem;
 }
 
 .card.skills .back ul {
@@ -202,14 +285,17 @@ a{
 }
 
 .card.skills .back ul li {
-    margin-bottom: 10px;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 6px; 
     text-align: center;
-    font-size: 14px;
+    font-size: 10px; 
     font-weight: bold;
     color: black;
     background-color: #ededed;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); 
+    border-radius: .2rem;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
+
 
 /* Carousel */
 #testimonials {
@@ -235,12 +321,14 @@ a{
 }
 
 .quote p {
+    font-family: 'Work Sans', sans-serif;
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
 }
 
 .testimonial-author {
+    font-family: 'Work Sans', sans-serif;
     font-weight: bold;
 }
 
@@ -310,8 +398,8 @@ a{
 
 @media (max-width: 768px) {
     .profile-pic {
-        width: 120px; /* Adjust the size as needed */
-        height: 120px; /* Adjust the size as needed */
+        width: 120px; 
+        height: 120px; 
     }
 
     .carousel-control-prev,
@@ -392,10 +480,10 @@ a{
 
 @keyframes glow-animation {
     0% {
-        text-shadow: 0 0 10px rgb(0, 0, 0); /* Initial glow */
+        text-shadow: 0 0 10px rgb(0, 0, 0);
     }
     100% {
-        text-shadow: 0 0 10px rgb(255, 255, 255); /* Final glow */
+        text-shadow: 0 0 10px rgb(255, 255, 255);
     }
 }
   
